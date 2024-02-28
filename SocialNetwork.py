@@ -4,5 +4,5 @@ class SocialNetwork:
     _instance = None
     users =  {}
     networkName = ' '
-   def new(self, networkName):
+    def new(self, networkName):
 
