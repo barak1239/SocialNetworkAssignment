@@ -1,4 +1,4 @@
-from post import Post, TextPost, ImagePost, SalePost
+from Post import Post, TextPost, ImagePost, SalePost
 
 class User(object):
 	

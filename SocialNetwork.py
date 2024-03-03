@@ -1,4 +1,4 @@
-from user import User
+from User import User
 from singleton import Singleton
 
 class SocialNetwork(object):
