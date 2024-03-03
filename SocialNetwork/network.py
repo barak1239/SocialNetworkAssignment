@@ -1,6 +1,5 @@
-from user import User
-from post import Post
-from singleton import Singleton
+from .user import User
+from .singleton import Singleton
 
 class SocialNetwork(object):
 	### need to make as singelton
@@ -8,7 +7,6 @@ class SocialNetwork(object):
 	
 	def __init__(self, name: str):
 			self.name = name
-			self.posts: list[Post] = []
 			print(f"The social network {self.name} was created!")
 	
 	def sign_up(self, username: str, password: str) -> User:
@@ -32,11 +30,9 @@ class SocialNetwork(object):
 	
 	def __str__(self) -> str:
 		#TODO
-		return ""
+		string = f"{self.name} social network:\n"
+		for user in User.users:
+			user = User.users[user]
+			string += f"{user}"
+		return string
 
-# class SocialNetwork:
-#     _instance = None
-#     users =  {}
-#     networkName = ' '
-#     def new(self, networkName):
-#         pass

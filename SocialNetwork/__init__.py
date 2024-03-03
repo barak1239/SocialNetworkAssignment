@@ -1,1 +1,1 @@
-from network import SocialNetwork
+from .network import SocialNetwork
