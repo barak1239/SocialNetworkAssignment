@@ -32,7 +32,6 @@ class SocialNetwork(object):
 			pass
 	
 	def __str__(self) -> str:
-		#TODO
 		string = f"{self.name} social network:\n"
 		for user in User.users:
 			user = User.users[user]
