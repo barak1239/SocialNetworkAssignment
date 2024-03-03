@@ -18,6 +18,7 @@ class SocialNetwork(object):
 			user: User = User.users[username]
 			assert user.password == password
 			user.logged_in = True
+			print(f"{user.username} connected")
 		except Exception:
 			pass
 	
@@ -25,6 +26,7 @@ class SocialNetwork(object):
 		try:
 			user: User = User.users[username]
 			user.logged_in = False
+			print(f"{user.username} disconnected")
 		except Exception:
 			pass
 	
